@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Student Resources Management System</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #1e293b, #0f172a, #4c1d95);
+    height: 100vh;
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .login-btn {
+    background: #2563EB;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .login-btn:hover {
+    background: #1d4ed8;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .container p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #cbd5e1;
+  }
+
+  .search-bar {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+  }
+
+  .search-bar button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    background: #7C3AED;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 20px 60px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.1);
+    padding: 22px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.16);
+  }
+
+  .card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #e2e8f0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .search-bar input {
+      width: 80%;
+    }
+    .grid {
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<nav>
+
+  <div style="text-align:center;"><img src="Logo design for Stud.png" alt="My logo" height="200px" width="200px"></div>
+  <div class="logo">
+    <div style="text-align:center;"></div>
+  </div>
+  <div>Home</div>
+  <div>About</div>
+  <button class="login-btn">Login</button>
+</nav>
+
+<div class="container">
+  <h1>Access All Academic Resources</h1>
+  <p>A unified platform for AIML, AIDS, CSE & CS departments</p>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search assignments, papers, notes, resources..." />
+    <button>Search</button>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Assignments</h2>
+    <p>Get all department assignments instantly</p>
+  </div>
+  <div class="card">
+    <h2>Previous Papers</h2>
+    <p>Access past university question papers</p>
+  </div>
+  <div class="card">
+    <h2>Resources</h2>
+    <p>Books, references, PDFs, links</p>
+  </div>
+  <div class="card">
+    <h2>Notes</h2>
+    <p>Lecture notes, guides, summaries</p>
+  </div>
+
+<div class="card">
+    <h2>Study Links</h2>
+    <p>For doubt solving links for effective Learning</p>
+</div>
+</div>
+</body>
+</html>
