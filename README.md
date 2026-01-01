@@ -71,4 +71,4 @@ We designed this platform to:
 
 1. Clone the repository:
    ```bash
-   git clone <[your-github-link-here](https://github.com/prangaik-41/StudyMitra)>
+   git clone https://github.com/prangaik-41/StudyMitra
